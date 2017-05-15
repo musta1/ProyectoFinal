@@ -27,38 +27,52 @@
         	<div class="panel panel-default">
         		
 			 			<div class="panel-body">
-			    		<form role="form">
+
+			 			<form role="form" action="login.proc.php" method="POST">
 			    			<div class="row">
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-			                <input type="text" name="nombre" id="nombre" class="form-control input-sm" placeholder="Nombre">
+			                <input type="text" name="cliente_nombre" id="cliente_nombre" class="form-control input-sm" placeholder="Nombre">
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-			    						<input type="text" name="apellido1" id="apellido1" class="form-control input-sm" placeholder="Primer Apellido">
+			    						<input type="text" name="cliente_apellido1" id="cliente_apellido1" class="form-control input-sm" placeholder="Primer Apellido">
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
-			    						<input type="text" name="apellido2" id="apellido2" class="form-control input-sm" placeholder="Segundo Apellido">
+			    						<input type="text" name="cliente_apellido2" id="cliente_apellido2" class="form-control input-sm" placeholder="Segundo Apellido">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="date" name="cliente_fecha" id="cliente_fecha" class="form-control input-sm" min="1917-01-01" max="1999-12-31">
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-4 col-sm-4 col-md-4">
 			    					<div class="form-group">
-			    						<input type="text" name="edad" id="edad" class="form-control input-sm" placeholder="Edad">
+			    						<input type="text" name="cliente_peso" id="cliente_peso" maxlength="3" class="form-control input-sm" placeholder="Peso (Kg)">
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-4 col-sm-4 col-md-4">
 			    					<div class="form-group">
-			    						<input type="text" name="peso" id="peso" class="form-control input-sm" placeholder="Peso (Kg)">
+			    						<input type="text" name="cliente_altura" id="cliente_altura" maxlength="3" class="form-control input-sm" placeholder="Altura (cm)">
 			    					</div>
 			    				</div>
-			    				<div class="col-xs-4 col-sm-4 col-md-4">
+			    				<div class="col-xs-12 col-sm-12 col-md-12">
 			    					<div class="form-group">
-			    						<input type="text" name="altura" id="altura" class="form-control input-sm" placeholder="Altura (cm)">
+			    						<label class="radio-inline"><input type="radio" name="cliente_sexo" checked>Prefiero no revelarlo</label>
+										<label class="radio-inline"><input type="radio" name="cliente_sexo">Mujer</label>
+										<label class="radio-inline"><input type="radio" name="cliente_sexo">Hombre</label>
 			    					</div>
 			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="cliente_telefono" id="cliente_telefono" maxlength="9" class="form-control input-sm" placeholder="Teléfono">
+			    					</div>
+			    				</div>
+			    				
 			    			</div>
 
 			    			<div class="form-group">

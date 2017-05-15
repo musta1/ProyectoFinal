@@ -17,7 +17,9 @@
 <body>
 <!-- nav con login -->
 <nav class="navbar navbar-default">
+
   <div class="container-fluid">
+  <img src="IMG/titulo-gran.png" class="img-fluid" alt="Logo" width="25%">
    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <form id="signin" class="navbar-form navbar-right" role="form">
@@ -37,10 +39,14 @@
     </div>
   </div>
 </nav>
+
+
 <!-- slider -->
 <div class="container">
-  <h2>Ofertas</h2>  
+  <h2>Ofertas</h2> 
+
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>

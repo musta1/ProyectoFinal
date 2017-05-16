@@ -17,6 +17,9 @@
     <title>JMFIT Nutrition</title>
   </head>
   <body>
+
+
+
   <div class="page-header">
     <h1>Registro <span class="pull-right">&nbsp;<a href='../index.php'><i class="fa fa-arrow-circle-left" aria-hidden="true" title='Atrás'></i></a></span></h1>
   </div>

@@ -37,20 +37,28 @@
                 <a class="navbar-brand page-scroll" href="#page-top">
                     <img src="logo/titulo-gran1.png" class="img-fluid" alt="Logo" width="25%">
                 </a>
-                <form id="signin" class="navbar-form navbar-right" role="form">
-                   <div class="input-group">
-                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                   <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email">
-                   </div>
 
-                   <div class="input-group">
-                   <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                   <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
-                   </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
 
-                   <button type="submit" class="btn btn-primary">Acceder</button>
-                   <br><a href="php/login.php">¿No tienes cuenta?</a>
-                </form>
+                <!-- < --><!-- /button>
+                 <form id="signin" class="navbar-form navbar-right" role="form">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Acceder</button>
+                    <br><a href="php/login.php">¿No tienes cuenta?</a>
+                </form> -->
             </div>
 
 
@@ -62,13 +70,29 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">Contacto</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">Donde estamos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Quienes somos</a>
+                    </li>
+                    <li>
+                        <form id="signin" class="navbar-form navbar-right" role="form">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Acceder</button>
+                            <br><a href="php/login.php">¿No tienes cuenta?</a>
+                        </form>
                     </li>
                 </ul>
             </div>
@@ -124,29 +148,6 @@
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>About Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Services Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -157,6 +158,31 @@
             </div>
         </div>
     </section>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Services Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About Section</h1>
+                    hola me llamo musta y toca, tocarme los webos 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

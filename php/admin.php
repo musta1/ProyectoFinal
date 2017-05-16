@@ -27,27 +27,45 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Nombre dietista</th>
-        <th>Apellido dietista</th>
-        <th>Apellido 2 dietista</th>
-        <th><a href="guardar_recurso.php"> <img src="boton_nuevo.png" height="50" width="110"></a></th>
+        <th>Id Usuario</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Segundo Apellido</th>
+        <th>Fecha nacimiento</th>
+        <th>Peso (CM)</th>
+        <th>Altura (CM)</th>
+        <th>Sexo</th>
+        <th>Teléfono</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Categoría</th>
+        <th><a href="agregar_cliente.php"> <i class="fa fa-user-plus fa-2x" aria-hidden="true"></i></a></th>
       </tr>
     </thead>
      <?php
       include("conexion.php");
-      $query="SELECT * FROM recursos";
+      $query="SELECT * FROM tbl_cliente";
       $resultado=$conexion->query($query);
       while($row=$resultado-> fetch_assoc()){
       ?>
     <tbody>
          
-     <tr class="danger">
-     <td><?php echo $row['recurso_id']; ?></td>
-     <td><?php echo $row['recurso_nombre']; ?></td>
-     <td><?php echo $row['recurso_tipo']; ?></td>
-     <?php $recurso_id=$row['recurso_id']; ?>
-      <td><a href="modificar2.php?recurso_id=<?php echo $recurso_id; ?>"><img src="modificar.png" height="40" width="70"></a></td>
-      <td><a href="eliminar2.php?recurso_id=<?php echo $recurso_id; ?>"><img src="eliminar.png" height="40" width="70"></a></td>
+     <tr class="info">
+     <td><?php echo $row['cliente_id']; ?></td>
+     <td><?php echo $row['cliente_nombre']; ?></td>
+     <td><?php echo $row['cliente_apellido1']; ?></td>
+     <td><?php echo $row['cliente_apellido2']; ?></td>
+     <td><?php echo $row['cliente_fecha']; ?></td>
+     <td><?php echo $row['cliente_peso']; ?></td>
+     <td><?php echo $row['cliente_altura']; ?></td>
+     <td><?php echo $row['cliente_sexo']; ?></td>
+     <td><?php echo $row['cliente_telefono']; ?></td>
+     <td><?php echo $row['cliente_email']; ?></td>
+     <td><?php echo $row['cliente_password']; ?></td>
+     <td><?php echo $row['cliente_categoria']; ?></td>
+     <?php $cliente_id=$row['cliente_id']; ?>
+      <td><a href="modificar_cliente.php?cliente_id=<?php echo $cliente_id; ?>"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></a></td>
+      <td><a href="eliminar_cliente.php?cliente_id=<?php echo $cliente_id; ?>"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></a></td>
       </tr>
 
       <?php

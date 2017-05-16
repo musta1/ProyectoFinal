@@ -18,7 +18,7 @@
 	</head>
 	<body>
 	<div class="page-header">
-		<h1>Registro <span class="pull-right">&nbsp;<a href='../index.php'><i class="fa fa-arrow-circle-left" aria-hidden="true" title='Atrás'></i></a></span></h1>
+		<h1>Nuevo cliente <span class="pull-right">&nbsp;<a href='admin.php'><i class="fa fa-arrow-circle-left" aria-hidden="true" title='Atrás'></i></a></span></h1>
 	</div>
 		<!-- formulario -->
 		<div class="container">
@@ -28,7 +28,7 @@
         		
 			 			<div class="panel-body">
 
-			 			<form role="form" action="login.proc.php" method="POST">
+			 			<form role="form" action="agregar_cliente.proc.php" method="POST">
 			    			<div class="row">
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
@@ -92,10 +92,7 @@
 			    				</div>
 			    			</div>
 			    			
-			    			<input type="submit" value="Aceptar" class="btn btn-info btn-block">
-			    		<p class="form-group">Al continuar confirmas que has leído y que estás de acuerdo con las <a href="#">Condiciones de uso</a> y <a href="#">Política de privacidad</a>.</p>
-							<hr>
-							<p>¿Ya tienes cuenta? <a href="../index.php">Inicia sesión</a></p>
+			    			<input type="submit" value="Dar de alta" class="btn btn-info btn-block">
 			    		</form>
 			    	</div>
 	    		</div>

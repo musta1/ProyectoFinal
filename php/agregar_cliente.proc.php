@@ -31,9 +31,9 @@ $query2="INSERT INTO tbl_direccion(direccion, cliente_id) VALUES ('$direccion', 
 $resultado= $conexion->query($query2);
 
  if($resultado){
-header("Location: ../index.php");
- }
- else{
- 	echo "No se ha insertado :(";
- }
+	header("Location: admin.php");
+}
+else{
+	echo "No se ha insertado :(";
+}
 ?>

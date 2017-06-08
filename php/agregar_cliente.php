@@ -17,8 +17,7 @@
 		<title>JMFIT Nutrition</title>
 	</head>
 	<body>
-
-<!--div arriba-->
+	<!--div arriba-->
 <div class="container">
             <div class="page-header">
                 <a class="">
@@ -29,29 +28,25 @@
 
 
                 <div class="">
-    <span class="pull-right">&nbsp;<a href='../index.php'><i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true" title='Atrás'></i></a></span>
+    <span class="pull-right">&nbsp;<a href='admin.php'><i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true" title='Atrás'></i></a></span>
   </div>
 
   <!--div arriba-->
-
-  
 		<!-- formulario -->
 		<div class="container">
-        <div class="row centered-form">
+			<div class="container">
+  <h2>Agregar nuevo Cliente</h2>
+          <div class="row centered-form">
         <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
         	<div class="panel panel-default">
         		
 			 			<div class="panel-body">
 
-			 			<form role="form" action="login.proc.php" method="POST">
-			 			<label for="coment">Datos cliente:</label>
+			 			<form role="form" action="agregar_cliente.proc.php" method="POST">
 			    			<div class="row">
-
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
-
 			    					<div class="form-group">
-
-			                			<input type="text" name="cliente_nombre" id="cliente_nombre" class="form-control input-sm" placeholder="Nombre" required autofocus>
+			                <input type="text" name="cliente_nombre" id="cliente_nombre" class="form-control input-sm" placeholder="Nombre" required autofocus>
 			    					</div>
 			    				</div>
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
@@ -64,14 +59,13 @@
 			    						<input type="text" name="cliente_apellido2" id="cliente_apellido2" class="form-control input-sm" placeholder="Segundo Apellido" required>
 			    					</div>
 			    				</div>
-			    				<!--direccion -->
+			    					<!--direccion -->
 			    				<div class="col-xs-12 col-sm-12 col-md-12">
 			    					<div class="form-group">
 			    						<input type="text" name="direccion" id="direccion" class="form-control input-sm" placeholder="Dirección" required>
 			    					</div>
 			    				</div>
 			    				<!--direccion -->
-
 			    				<div class="col-xs-6 col-sm-6 col-md-6">
 			    					<div class="form-group">
 			    						<input type="date" name="cliente_fecha" id="cliente_fecha" class="form-control input-sm" min="1917-01-01" max="1999-12-31" required>
@@ -87,26 +81,19 @@
 			    						<input type="text" name="cliente_altura" id="cliente_altura" maxlength="3" class="form-control input-sm" placeholder="Altura (cm)" required>
 			    					</div>
 			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="text" name="cliente_telefono" id="cliente_telefono" maxlength="9" class="form-control input-sm" placeholder="Teléfono" required>
-			    					</div>
-			    				</div>
 			    				<div class="col-xs-12 col-sm-12 col-md-12">
 			    					<div class="form-group">
-			    						<label class="radio-inline"><input type="radio" name="cliente_sexo" checked value="otros">Prefiero no revelarlo</label>
+			    						<label class="radio-inline"><input type="radio" name="cliente_sexo" value="otros" checked>Prefiere no revelarlo</label>
 										<label class="radio-inline"><input type="radio" name="cliente_sexo" value="mujer">Mujer</label>
-										<label class="radio-inline"><input type="radio" name="cliente_sexo" value="hombre">Hombre </label>
+										<label class="radio-inline"><input type="radio" name="cliente_sexo" value="hombre">Hombre</label>
 			    					</div>
 			    				</div>
 			    				<!-- OBJETIVO -->
 			    				   
 					                  <div class="col-xs-12 col-sm-12 col-md-12">
 					                    <div class="form-group">
-					                    <label for="coment">Objetivos:</label>
 					                      <select name="cliente_objetivo" class="form-control" required>
 					                      <!-- <option value="<?php echo $row['cliente_categoria']; ?>"><?php echo $row['cliente_categoria']; ?></option> -->
-					                      <option selected="" required></option>
 					                      <option value="Aumentar">Aumentar masa muscular</option>
 					                      <option value="Definición">Definición</option>
 					                      <option value="Proteíca"> Proteíca</option>
@@ -125,12 +112,15 @@
 								</div>
 								</div>
 			    				<!-- Comentarios -->
-			    				
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="cliente_telefono" id="cliente_telefono" maxlength="9" class="form-control input-sm" placeholder="Teléfono" required>
+			    					</div>
+			    				</div>
 			    				
 			    			</div>
 
 			    			<div class="form-group">
-			    				<label for="coment">Cuenta del usuario:</label>
 			    				<input type="email" name="cliente_email" id="cliente_email" class="form-control input-sm" placeholder="Email Address" required>
 			    			</div>
 
@@ -147,10 +137,7 @@
 			    				</div>
 			    			</div>
 			    			
-			    			<input type="submit" value="Aceptar" class="btn btn-info btn-block">
-			    				<p class="form-group">Al continuar confirmas que has leído y que estás de acuerdo con las <a href="#">Condiciones de uso</a> y <a href="#">Política de privacidad</a>.</p>
-							<hr>
-							<p>¿Ya tienes cuenta? <a href="../index.php">Inicia sesión</a></p>
+			    			<input type="submit" value="Dar de alta" class="btn btn-info btn-block">
 			    		</form>
 			    	</div>
 	    		</div>
